@@ -20,7 +20,7 @@ if (process.argv[2]) {
 switch (task) {
   case 1:
     globalThis.getServerURL = task1.getServerURL;
-    fetch(getServerURL() + "/test.json").then(response => response.json()).then(data => console.log(data));
+    fetch(getServerURL() + "/task.json").then(response => response.json()).then(data => console.log(data));
     break;
   case 2:
     globalThis.listUsers = task2.listUsers;
